@@ -1,3 +1,3 @@
 <template>
-    <h1> Kezdőlap </h1>
+    Főoldal
 </template>
