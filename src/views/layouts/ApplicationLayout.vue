@@ -67,6 +67,10 @@
         margin-bottom: 0px;
     }
 
+    ul.topbarlist {
+        padding-left: 0px;
+    }
+
 </style>
 
 <style lang="scss">
