@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import ApplicationLayout from '../views/ApplicationLayout.vue'
+import ApplicationLayout from '../views/layouts/ApplicationLayout.vue'
 
 const routes = [
   {
@@ -17,7 +17,7 @@ const routes = [
   {
     path: '/',
     name: 'Frontpage',
-    component: () => import('../views/Frontpage.vue')
+    component: () => import('../views/pages/Frontpage.vue')
   }
 ]
 
