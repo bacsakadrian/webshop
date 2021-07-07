@@ -10,11 +10,14 @@
   </div>
 
   <h1 style="font-family: Montserrat"> Montserrat </h1>
+  <h1 style="font-family: Roboto"> Roboto </h1>
     <router-view/>
 </template>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 </style>
 
 <style lang="less">
