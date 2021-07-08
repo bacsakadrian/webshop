@@ -13,34 +13,49 @@
         <nav style="background: white" class="uk-navbar-container" uk-navbar>
         <div class="uk-navbar-left">
 
-            <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+            <router-link class="uk-navbar-item" to="/">Enersys LOGO</router-link>
+        </div>
+
+        <div class="uk-navbar-right">
 
             <ul class="uk-navbar-nav">
                 <li>
-                    <a href="#">
-                        <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>
-                        Features
-                    </a>
+                    <router-link to="/">
+                        Kezdőlap
+                    </router-link>
                 </li>
-            </ul>
 
-            <div class="uk-navbar-item">
-                <div>Some <a href="#">Link</a></div>
-            </div>
+                <li class="uk-navbar-item">
+                    <router-link to="targonca-uzletag-motive">
+                        Targonca üzletág - Motive
+                    </router-link>
+                </li>
+
+                <li class="uk-navbar-item">
+                    <router-link to="helyhezkotott-uzletag-reserve">
+                        Helyhezkötött üzletág - Reserve
+                    </router-link>
+                </li>
+
+                <li class="uk-navbar-item">
+                    <router-link to="szerviz">
+                        Szerviz
+                    </router-link>
+                </li>
+            </ul> 
 
         </div>
     </nav>
-    <frontpage/>    
     <router-view/>
+    <div class="footer"> © 2019, EnerSys Hungária Kft. Minden jog fenntartva. </div> 
     </div>
 </template>
 
 <script>
-    import frontpage from '@/views/pages/Frontpage.vue'
 
     export default {
         name: 'ApplicationLayout',
-        components: {frontpage, }
+        components: { }
     }
 </script>
 

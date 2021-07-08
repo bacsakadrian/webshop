@@ -11,13 +11,12 @@ const routes = [
       {
         path: 'kosar',
         component: () => import('../views/CartComponent.vue')
+      },
+      {
+        path: 'kapcsolat',
+        component: () => import('../views/pages/Contact.vue')
       }
     ]
-  },
-  {
-    path: '/',
-    name: 'Frontpage',
-    component: () => import('../views/pages/Frontpage.vue')
   }
 ]
 
