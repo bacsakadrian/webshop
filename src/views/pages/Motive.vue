@@ -77,5 +77,5 @@
     .in-a-row {
         display: flex;
     }
-    h1 { text-align: center; }
+    h1, h3 { text-align: center; }
 </style>
