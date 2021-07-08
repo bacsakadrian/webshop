@@ -1,5 +1,5 @@
 <template>
-    <div class="topbar uk-container uk-container-expand">
+        <div class="topbar uk-container uk-container-expand">
         <div class="uk-light">
             <ul class="topbarlist">
                     <li><router-link to="/">Főoldal</router-link></li>
@@ -26,13 +26,6 @@
                 <div>Some <a href="#">Link</a></div>
             </div>
 
-            <div class="uk-navbar-item">
-                <form action="javascript:void(0)">
-                    <input class="uk-input uk-form-width-small" type="text" placeholder="Input">
-                    <button class="uk-button uk-button-default">Button</button>
-                </form>
-            </div>
-
         </div>
     </nav>
     <frontpage/>    
@@ -48,6 +41,12 @@
         components: {frontpage, }
     }
 </script>
+
+<style lang="scss">
+    @import "uikit/src/scss/variables-theme.scss";
+    @import "uikit/src/scss/mixins-theme.scss";
+    @import "uikit/src/scss/uikit-theme.scss";
+</style>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
@@ -71,8 +70,4 @@
         padding-left: 0px;
     }
 
-</style>
-
-<style lang="scss">
-    @import "~uikit/dist/css/uikit.min.css"
 </style>
