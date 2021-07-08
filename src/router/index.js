@@ -15,6 +15,10 @@ const routes = [
       {
         path: 'kapcsolat',
         component: () => import('../views/pages/Contact.vue')
+      },
+      {
+        path: 'targonca-uzletag-motive',
+        component: () => import('../views/pages/Motive.vue')
       }
     ]
   }

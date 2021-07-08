@@ -80,7 +80,7 @@
     </tbody>
 </table>
         <table id="targonca-contacts" class="uk-table">
-        <caption><h2>Targonca üzletág</h2></caption>
+        <caption><h2>Targonca üzletág elérhetőségei</h2></caption>
         <thead>
             <tr>
                 <th>Név</th>
