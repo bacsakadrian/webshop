@@ -4,8 +4,8 @@
 
 <style>
      :root {
-          --voros: rgb(128,0,0);
-          --vilagosszurke: #aaa;
-          --szovegszin: #666;
+          --enersys_red: rgb(128,0,0);
+          --enersys_lightgrey: #aaa;
+          --enersys_textcolor: #666;
      }
 </style>
