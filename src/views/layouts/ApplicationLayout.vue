@@ -2,8 +2,10 @@
         <div class="topbar uk-container uk-container-expand">
         <div class="uk-light">
             <ul class="topbarlist">
-                    <li><router-link to="/">Főoldal</router-link></li>
-                    <li><router-link to="kosar">Kosár</router-link></li>
+                    <li><a href="http://www.enersys.com/">ENERSYS HOME</a></li>
+                    <li><a href="http://www.enersys-emea.com/">ENERSYS EMEA HOME</a></li>
+                    <li><router-link to="magyarorszagi-cegtortenet">MAGYARORSZÁGI CÉGTÖRTÉNET</router-link></li>
+                    <li><router-link to="kapcsolat">KAPCSOLAT</router-link></li>
             </ul>
         </div>
     </div>
@@ -54,7 +56,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
     li {
-        padding-left: 5px;
+        padding-left: 15px;
     }
     .topbar { 
         color:white;
