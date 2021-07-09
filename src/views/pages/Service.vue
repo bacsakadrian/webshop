@@ -12,7 +12,7 @@
         </p>
     </div>
     <div><br>
-        <h4><strong>Szolgáltatások</strong></h4>
+        <h4 class="not-center"><strong>Szolgáltatások</strong></h4>
         <ul><strong>
             <li>Eseti javítás és karbantartás</li>
             <li>Megelőző, tervszerű, rendszeres karbantartás</li>
@@ -42,8 +42,12 @@
 </template>
 
 <style>
-    h1 {
-        text-align: center
+    h1, h2, h3 ,h4 ,h5 {
+        text-align: center;
+    }
+
+    .not-center {
+        text-align: left;
     }
 
     .text {

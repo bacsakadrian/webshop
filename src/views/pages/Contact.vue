@@ -34,10 +34,7 @@
 </template>
 
 <style>
-    h1 {
-        text-align: center;
-    }
-    h2 {
+    h1, h2, h3 ,h4 ,h5 {
         text-align: center;
     }
 
