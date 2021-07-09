@@ -10,15 +10,23 @@ const routes = [
     children : [
       {
         path: 'kosar',
-        component: () => import('../views/CartComponent.vue')
+        component: () => import('@/views/CartComponent.vue')
       },
       {
         path: 'kapcsolat',
-        component: () => import('../views/pages/Contact.vue')
+        component: () => import('@/views/pages/Contact.vue')
       },
       {
         path: 'targonca-uzletag-motive',
-        component: () => import('../views/pages/Motive.vue')
+        component: () => import('@/views/pages/Motive.vue')
+      },
+      {
+        path: 'helyhezkotott-uzletag-reserve',
+        component: () => import('@/views/pages/Reserve.vue')
+      },
+      {
+        path: 'szerviz',
+        component: () => import('@/views/pages/Service.vue')
       }
     ]
   }

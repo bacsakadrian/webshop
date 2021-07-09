@@ -14,20 +14,21 @@
                 Fax:+36 23 886 911<br>
                 Szerviz Tel.:+36 23 886 918<br>
                 Szerviz Fax:+36 23 886 919<br>
-                <a href="http://www.enersys.hu">Honlap</a>
+                <a href="http://www.enersys.hu">http://www.enersys.hu</a>
             </div>
         </div>
     </div>
     <br>
-    <div class="uk-container">
-        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #targonca-contacts">Targonca üzletág elérhetőségei</button>
-        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #helyuzletag-contacts">Helyhezkötött üzletág elérhetőségei</button>
-        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #szerviz-contacts">Szervíz üzletág elérhetőségei</button>
+
+    <div class="uk-flex">
+        <button class="uk-margin-left uk-button uk-button-default" type="button" uk-toggle="target: #targonca-contacts">Targonca üzletág elérhetőségei</button>
+        <button class="uk-margin-left uk-button uk-button-default" type="button" uk-toggle="target: #helyuzletag-contacts">Helyhezkötött üzletág elérhetőségei</button>
+        <button class="uk-margin-left uk-button uk-button-default" type="button" uk-toggle="target: #szerviz-contacts">Szervíz üzletág elérhetőségei</button>
     </div>
 
     <div>
-        <ContactTable id="targonca-contacts" title="Targonca" :contact = reserve />
-        <ContactTable id="helyuzletag-contacts" title="Helyhezkötött" :contact = "motive" />
+        <ContactTable id="targonca-contacts" title="Targonca" :contact = motive />
+        <ContactTable id="helyuzletag-contacts" title="Helyhezkötött" :contact = "reserve" />
         <ContactTable id="szerviz-contacts" title="Szervíz" :contact = "service" />
     </div>
 </template>
