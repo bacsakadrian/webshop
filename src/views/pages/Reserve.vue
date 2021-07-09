@@ -17,9 +17,7 @@
     <h4 class="center">Forgalmazott márkák</h4>
     <img class="uk-align-center" src="@/assets/markak.png"/>
     <h3 class="center"><strong>Kapcsolat - Helyhezkötött üzletág</strong></h3>
-    <div class="uk-text-center" uk-grid>
-        <ContactCard :contacts = reserve> </ContactCard>
-    </div>
+    <ContactCard :contacts = reserve> </ContactCard>
     
 </template>
 

@@ -36,9 +36,7 @@
     </div>
 
     <h3><strong>Kapcsolat - Szerviz</strong></h3>
-    <div uk-grid>
-        <ContactCard :contacts=service />
-    </div>
+    <ContactCard :contacts = service> </ContactCard>
 </template>
 
 <style>
