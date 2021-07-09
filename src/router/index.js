@@ -27,6 +27,10 @@ const routes = [
       {
         path: 'szerviz',
         component: () => import('@/views/pages/Service.vue')
+      },
+      {
+        path: 'magyarorszagi-cegtortenet',
+        component: () => import('@/views/pages/CompanyHistory.vue')
       }
     ]
   }

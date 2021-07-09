@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Helyhezkötött üzletág - Reserve</h1>
+        <h1 class="center">Helyhezkötött üzletág - Reserve</h1>
     </div>
 
     <img class="uk-align-center" src="@/assets/reserve_main.jpg"/>
@@ -14,9 +14,9 @@
     A közismert PowerSafe, DataSafe, Genesis, Odyssey és Cyclon márkanevek széles körben használtak a telekommunikáció, az IT, a közműszolgáltató (áram, víz, gáz szolgáltatók és erőművek), az UPS, az általános elektronikai és speciális alkalmazások területén.
     </p>
 
-    <h4>Forgalmazott márkák</h4>
+    <h4 class="center">Forgalmazott márkák</h4>
     <img class="uk-align-center" src="@/assets/markak.png"/>
-    <h3><strong>Kapcsolat - Helyhezkötött üzletág</strong></h3>
+    <h3 class="center"><strong>Kapcsolat - Helyhezkötött üzletág</strong></h3>
     <div class="uk-text-center" uk-grid>
         <ContactCard :contacts = reserve> </ContactCard>
     </div>
@@ -24,7 +24,7 @@
 </template>
 
 <style>
-    h1, h4, h3 {
+    center {
         text-align: center
         }
 

@@ -5,7 +5,7 @@
 
     <div uk-grid>
         <img src="@/assets/szerviz.png"/>
-        <p>Az EnerSys értékesített termékeinek üzemeltetéséhez szolgáltatások széles választékát biztosítja.
+        <p class="text">Az EnerSys értékesített termékeinek üzemeltetéséhez szolgáltatások széles választékát biztosítja.
         Képzett szakember gárdával, kiterjedt szervizhálózattal és optimalizált alkatrész ellátással biztosítja
         ügyfelei részére a zavartalan működést szerte a világban. Az EnerSys ügyfélbarát megközelítése a
         rugalmas, megbízható, szakértő közreműködés, amely partnereinek minden üzleti igényét kielégíti.
@@ -25,7 +25,7 @@
 
     <br>
     <div uk-grid>
-        <p style="max-width: 60%">
+        <p class="text" style="max-width: 60%">
         Az Ön dolga akkumulátorainak csúcsformában tartása.
         A megfelelő, előírások szerinti üzemeltetés és karbantartás tudja csak biztosítani az elvárt élettartamot és megbízható üzemvitelt.
         Mindig kövesse a gyártó használati utasításait és tartsa be az időszakos ellenőrzések előírásait.
@@ -46,7 +46,7 @@
         text-align: center
     }
 
-    p {
+    .text {
         max-width: 60%
     }
 </style>
