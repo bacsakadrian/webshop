@@ -20,17 +20,18 @@
     </div>
     <br>
 
-    <div class="uk-flex">
-        <button class="uk-margin-left uk-button uk-button-default" type="button" uk-toggle="target: #targonca-contacts">Targonca üzletág elérhetőségei</button>
-        <button class="uk-margin-left uk-button uk-button-default" type="button" uk-toggle="target: #helyuzletag-contacts">Helyhezkötött üzletág elérhetőségei</button>
-        <button class="uk-margin-left uk-button uk-button-default" type="button" uk-toggle="target: #szerviz-contacts">Szervíz üzletág elérhetőségei</button>
-    </div>
+    <ul class="uk-subnav" uk-switcher>
+            <li><a href="#">Targonca üzletág</a></li>
+            <li><a href="#">Hely üzletág</a></li>
+            <li><a href="#">Szerviz üzletág</a></li>
+    </ul>
 
-    <div>
-        <ContactTable id="targonca-contacts" title="Targonca" :contact = motive />
-        <ContactTable id="helyuzletag-contacts" title="Helyhezkötött" :contact = "reserve" />
-        <ContactTable id="szerviz-contacts" title="Szervíz" :contact = "service" />
-    </div>
+    <ul class="uk-switcher uk-margin">
+        <li><ContactTable id="targonca-contacts" title="Targonca" :contact = motive /></li>
+        <li><ContactTable id="helyuzletag-contacts" title="Helyhezkötött" :contact = "reserve" /></li>
+        <li><ContactTable id="szerviz-contacts" title="Szerviz" :contact = "service" /></li>
+    </ul>
+
 </template>
 
 <style>
