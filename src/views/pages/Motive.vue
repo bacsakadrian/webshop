@@ -10,9 +10,7 @@
     Gyártmánycsaládjainak, mint a Hawker, a Fiamm Motive Power és az Energia főbb alkalmazási területei: az anyagmozgatás – elsősorban elektromos targoncák; a mobil berendezések energiaellátása – személyemelők, takarítógépek stb.; egyéb speciális, ciklikus igénybevételű alkalmazások – rokkantkocsi, golfkocsi stb. és a hibrid üzemű berendezések.
     </p>
     <h3><strong>Kapcsolat - targonca üzletág</strong></h3>
-    <div class="uk-text-center" uk-grid>
-        <ContactCard :contacts = motive> </ContactCard>
-    </div>
+    <ContactCard :contacts = motive> </ContactCard>
 </template>
 
 
