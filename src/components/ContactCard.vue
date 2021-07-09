@@ -8,9 +8,9 @@
                 </div>
             </div>
             <div class="uk-card-body">
-                <p>{{ c.fax }}</p>
-                <p>{{ c.mobile }}</p>
-                <p><a href="'mailto:' + c.email">{{ c.email }}</a></p>
+                <p><a :href="'tel:' + c.fax">{{ c.fax }}</a></p>
+                <p><a :href="'tel:' + c.mobile">{{ c.mobile }}</a></p>
+                <p><a :href="'mailto:' + c.email">{{ c.email }}</a></p>
             </div>
         </div>
 </template>
