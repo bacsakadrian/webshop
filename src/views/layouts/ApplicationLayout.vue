@@ -1,15 +1,15 @@
 <template>
-        <div class="topbar uk-container uk-container-expand">
-        <div class="uk-light">
-            <ul class="topbarlist">
-                    <li><a href="http://www.enersys.com/">ENERSYS HOME</a></li>
-                    <li><a href="http://www.enersys-emea.com/">ENERSYS EMEA HOME</a></li>
-                    <li><router-link to="magyarorszagi-cegtortenet">MAGYARORSZÁGI CÉGTÖRTÉNET</router-link></li>
-                    <li><router-link to="kapcsolat">KAPCSOLAT</router-link></li>
-            </ul>
+        <div class="uk-light topbar">
+            <div class="uk-container" id="topbar">
+                <ul class="topbarlist">
+                        <li><a href="http://www.enersys.com/">ENERSYS HOME</a></li>
+                        <li><a href="http://www.enersys-emea.com/">ENERSYS EMEA HOME</a></li>
+                        <li><router-link to="magyarorszagi-cegtortenet">MAGYARORSZÁGI CÉGTÖRTÉNET</router-link></li>
+                        <li><router-link to="kapcsolat">KAPCSOLAT</router-link></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="uk-container uk-container-expand">
+    <div class="uk-container">
         <nav style="background: white" class="uk-navbar-container" uk-navbar>
         <div class="uk-navbar-left">
 
