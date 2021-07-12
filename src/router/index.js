@@ -31,6 +31,10 @@ const routes = [
       {
         path: 'magyarorszagi-cegtortenet',
         component: () => import('@/views/pages/CompanyHistory.vue')
+      },
+      {
+        path: 'regisztracio',
+        component: () => import('@/views/pages/Registration.vue')
       }
     ]
   }
