@@ -1,26 +1,40 @@
 <template>
-  <div class="uk-margin">
-    <label class="uk-form-label" :for="name"> {{ name }} </label>
-    <Field class="uk-input" :name="name" :rules="empty" :type="type" :id="name" :placeholder="name" required="true"/>
-    <ErrorMessage class="uk-text-danger" :name="name" />
+  <div id="app">
+      <label for="name"> {{ name }} </label>
+      <Field class="uk-input" :name="name" :rules="validateEmail" />
+      <ErrorMessage name="email" />
   </div>
 </template>
 
 <script>
-  import {  Field, ErrorMessage } from 'vee-validate';
-  export default {
-    components: { Field, ErrorMessage },
-    props: {
-      name : String,
-      type : String,
+import { Field, ErrorMessage } from 'vee-validate';
+
+export default {
+  props: {
+  name: String 
+  },
+  components: {
+    Field,
+    ErrorMessage,
+  },
+  methods: {
+    onSubmit(values) {
+      alert(JSON.stringify(values, null, 2));
     },
-    methods: {
-      empty(value) {
-        if(!value) {
-          return "Kötelező a mező kitöltése"  
-        }
-        return true;
+    validateEmail(value) {
+      // if the field is empty
+      if (!value) {
+        return 'This field is required';
       }
-    }
-  }
+
+      // if the field is not a valid email
+      if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
+        return 'This field must be a valid email';
+      }
+
+      // All is good
+      return true;
+    },
+  },
+};
 </script>
