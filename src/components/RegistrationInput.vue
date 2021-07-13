@@ -13,8 +13,8 @@
       @input="handleChange"
     />
 
-    <p v-show="errorMessage">
-      Ez a mező hibásan van kitöltve!
+    <p class="uk-text-danger" v-show="errorMessage">
+      Hibásan van kitöltve ez a mező!
     </p>
   </div>
 </template>

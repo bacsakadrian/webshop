@@ -4,10 +4,15 @@ import ApplicationLayout from '../views/layouts/ApplicationLayout.vue'
 const routes = [
   {
     path: '/',
+    redirect: 'kezdolap',
     name: 'ApplicationLayout',
     component: ApplicationLayout,
 
     children : [
+      {
+        path: 'kezdolap',
+        component: () => import('@/views/pages/Frontpage.vue')
+      },
       {
         path: 'kosar',
         component: () => import('@/views/CartComponent.vue')
