@@ -1,40 +1,73 @@
 <template>
-  <div id="app">
-      <label for="name"> {{ name }} </label>
-      <Field class="uk-input" :name="name" :rules="validateEmail" />
-      <ErrorMessage name="email" />
+  <div
+    class="uk-margin"
+    :class="{ 'has-error': !!errorMessage, success: meta.valid }"
+  >
+    <label :for="name">{{ label }}</label>
+    <input class="uk-input"
+      :name="name"
+      :id="name"
+      :type="type"
+      :value="inputValue"
+      :placeholder="placeholder"
+      @input="handleChange"
+    />
+
+    <p v-show="errorMessage">
+      Ez a mező hibásan van kitöltve!
+    </p>
   </div>
 </template>
 
 <script>
-import { Field, ErrorMessage } from 'vee-validate';
+import { useField } from "vee-validate";
 
 export default {
   props: {
-  name: String 
-  },
-  components: {
-    Field,
-    ErrorMessage,
-  },
-  methods: {
-    onSubmit(values) {
-      alert(JSON.stringify(values, null, 2));
+    type: {
+      type: String,
+      default: "text",
     },
-    validateEmail(value) {
-      // if the field is empty
-      if (!value) {
-        return 'This field is required';
-      }
-
-      // if the field is not a valid email
-      if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-        return 'This field must be a valid email';
-      }
-
-      // All is good
-      return true;
+    value: {
+      type: String,
+      default: "",
     },
+    name: {
+      type: String,
+      required: true,
+    },
+    label: {
+      type: String,
+      required: true,
+    },
+    successMessage: {
+      type: String,
+      default: "",
+    },
+    placeholder: {
+      type: String,
+      default: "",
+    },
+  },
+  setup(props) {
+    const {
+      value: inputValue,
+      errorMessage,
+      handleChange,
+      meta,
+    } = useField(props.name, undefined, {
+      initialValue: props.value,
+    });
+
+    return {
+      handleChange,
+      errorMessage,
+      inputValue,
+      meta,
+    };
   },
 };
 </script>
+
+<style  scoped>
+</style>
